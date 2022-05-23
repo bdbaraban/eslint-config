@@ -21,24 +21,24 @@ npx install-peerdeps @bdbaraban/eslint-config@latest
 ## Usage
 
 Entry points:
-```json
-{
-  "extends": [
-    "@bdbaraban/eslint-config", # If not using React
-    "@bdbaraban/eslint-config/react" # If using React
-  ]
-}
+```javascript
+module.exports = {
+  extends: [
+    '@bdbaraban/eslint-config', // If not using React
+    '@bdbaraban/eslint-config/react', // If using React
+  ],
+};
 ```
 
 Rule sets:
-```json
-{
-  "extends": [
-    "@bdbaraban/eslint-config/rules/base", # eslint-config-airbnb-base + eslint-plugin-prettier
-    "@bdbaraban/eslint-config/rules/comments", # eslint-plugin-comments
-    "@bdbaraban/eslint-config/rules/functional", # eslint-plugin-functional
-    "@bdbaraban/eslint-config/rules/react", # eslint-plugin-react + eslint-plugin-react-hooks + eslint-plugin-jsx-a11y
-    "@bdbaraban/eslint-config/rules/typescript" # @typescript-eslint/eslint-plugin
-  ]
-}
+```javascript
+module.exports = {
+  extends: [
+    '@bdbaraban/eslint-config/rules/base', // eslint-config-airbnb-base + eslint-plugin-prettier
+    '@bdbaraban/eslint-config/rules/comments', // eslint-plugin-comments
+    '@bdbaraban/eslint-config/rules/functional', // eslint-plugin-functional
+    '@bdbaraban/eslint-config/rules/react', // eslint-plugin-react + eslint-plugin-react-hooks + eslint-plugin-jsx-a11y
+    '@bdbaraban/eslint-config/rules/typescript', // @typescript-eslint/eslint-plugin
+  ],
+};
 ```
