@@ -1,0 +1,66 @@
+{
+  "name": "@bdov/eslint-config",
+  "version": "0.0.1",
+  "description": "My personal ESLint config",
+  "main": "dist/src/index.js",
+  "types": "dist/src/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bdbaraban/eslint-config"
+  },
+  "exports": {
+    ".": "./dist/src/index.js",
+    "./react": "./dist/src/react.js",
+    "./rules/base": "./dist/src/rules/base.js",
+    "./rules/comments": "./dist/src/rules/comments.js",
+    "./rules/functional": "./dist/src/rules/functional.js",
+    "./rules/react": "./dist/src/rules/react.js",
+    "./rules/typescript": "./dist/src/rules/typescript.js"
+  },
+  "peerDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.25.0",
+    "@typescript-eslint/parser": "^5.25.0",
+    "eslint": "^8.16.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-airbnb-typescript": "^17.0.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-import-resolver-typescript": "^2.7.1",
+    "eslint-plugin-eslint-comments": "^3.2.0",
+    "eslint-plugin-functional": "^4.2.1",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.30.0",
+    "eslint-plugin-react-hooks": "^4.5.0",
+    "prettier": "^2.6.2",
+    "tsutils": "^3.21.0",
+    "typescript": "^4.6.4"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.25.0",
+    "@typescript-eslint/parser": "^5.25.0",
+    "@typescript-eslint/typescript-estree": "^5.25.0",
+    "eslint": "^8.16.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-airbnb-typescript": "^17.0.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-import-resolver-typescript": "^2.7.1",
+    "eslint-plugin-eslint-comments": "^3.2.0",
+    "eslint-plugin-functional": "^4.2.1",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.30.0",
+    "eslint-plugin-react-hooks": "^4.5.0",
+    "prettier": "^2.6.2",
+    "rimraf": "^3.0.2",
+    "tsutils": "^3.21.0",
+    "typescript": "^4.6.4"
+  },
+  "scripts": {
+    "build": "tsc",
+    "clean": "rimraf dist"
+  }
+}
