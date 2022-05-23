@@ -1,13 +1,19 @@
 {
-  "name": "@bdov/eslint-config",
+  "name": "@bdbaraban/eslint-config",
   "version": "0.0.1",
-  "description": "My personal ESLint config",
-  "main": "dist/src/index.js",
-  "types": "dist/src/index.d.ts",
+  "author": "Brennan D Baraban <brennan@bdov.dev> (https://bdov.dev)",
+  "description": "My ESLint config",
+  "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/bdbaraban/eslint-config"
+    "url": "git+https://github.com/bdbaraban/eslint-config"
   },
+  "bugs": {
+    "url": "https://github.com/bdbaraban/eslint-config/issues"
+  },
+  "homepage": "https://github.com/bdbaraban/eslint-config#readme",
+  "main": "dist/src/index.js",
+  "types": "dist/src/index.d.ts",
   "exports": {
     ".": "./dist/src/index.js",
     "./react": "./dist/src/react.js",
@@ -16,6 +22,10 @@
     "./rules/functional": "./dist/src/rules/functional.js",
     "./rules/react": "./dist/src/rules/react.js",
     "./rules/typescript": "./dist/src/rules/typescript.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "clean": "rimraf dist"
   },
   "peerDependencies": {
     "@typescript-eslint/eslint-plugin": "^5.25.0",
@@ -58,9 +68,5 @@
     "rimraf": "^3.0.2",
     "tsutils": "^3.21.0",
     "typescript": "^4.6.4"
-  },
-  "scripts": {
-    "build": "tsc",
-    "clean": "rimraf dist"
   }
 }
