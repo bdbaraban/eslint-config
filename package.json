@@ -1,6 +1,6 @@
 {
   "name": "@bdbaraban/eslint-config",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": "Brennan D Baraban <brennan@bdov.dev> (https://bdov.dev)",
   "description": "My ESLint config",
   "license": "MIT",
